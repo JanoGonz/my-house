@@ -94,5 +94,20 @@ public class Picture
         }
     }
     
-
+    public void atardecer()
+    {
+           if (sun != null)
+           {
+                sun.moveVertical(20);
+                sun.moveHorizontal(20);
+            }
+    }
+    public void amanecer()
+    {
+           if (sun != null)
+           {
+                sun.moveVertical(-20);
+                sun.moveHorizontal(-20);
+            }
+    }
 }
