@@ -99,8 +99,15 @@ public class Picture
     {
            if (sun != null)
            {
-                sun.moveVertical(20);
-                sun.moveHorizontal(20);
+               if (person1 != null) {
+               person1.makeInvisible();
+            }
+            Person person1 = new Person();
+            person1.moveHorizontal(250);
+            person1.makeVisible();
+            sun.slowMoveVertical(40);
+            person1.slowMoveHorizontal(-200);
+            
             }
     }
     public void amanecer()
@@ -113,7 +120,7 @@ public class Picture
             Person person1 = new Person();
             person1.moveHorizontal(250);
             person1.makeVisible();
-            sun.slowMoveVertical(-20);
+            sun.slowMoveVertical(-40);
             person1.slowMoveHorizontal(-200);
             
             }
